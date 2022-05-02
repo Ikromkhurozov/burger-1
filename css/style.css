@@ -35,6 +35,25 @@ body {
   overflow-x: hidden;
 }
 
+.section {
+  padding: 3rem 9%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #fff;
+  border: 0.2rem solid rgba(255, 255, 255, 0.3);
+  background: no-repeat;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #000;
+  background: #fff;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -109,9 +128,39 @@ body {
   transform: rotate(180deg);
 }
 
+.home {
+  margin-top: 70px;
+  background: url(../images/home-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home .content {
+  max-width: 70rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.home img {
+  width: 100%;
+}
+.home h3 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.home p {
+  font-size: 1.7rem;
+  line-height: 2;
+  color: #aaa;
+  padding: 2rem 0;
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 3rem;
+  }
+
+  .section {
+    padding: 3rem 2rem;
   }
 }
 @media (max-width: 991px) {
@@ -147,6 +196,11 @@ body {
   }
   .header .navbar .space {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .home .content h3 {
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 450px) {
