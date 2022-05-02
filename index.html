@@ -6,15 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css link -->
     <link rel="stylesheet" href="./css/style.css">
-
+    <!-- cdn font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- title -->
-    <title>Burger cafe !</title>
+    <title>Order Burger!</title>
 </head>
 <body>
-    
+    <!-- header section  -->
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars icons"></div>
+        <div id="search-btn" class="fas fa-search icons"></div>
+     
+        <nav class="navbar">
+           <a href="#home">home</a>
+           <a href="#menu">menu</a>
+           <a href="#about">about</a>
+           <span class="space"></span>
+           <a href="#reviews">reviews</a>
+           <a href="#contact">contact</a>
+           <a href="#blogs">blogs</a>
+        </nav>
+
+        <a href="#" class="fas fa-shopping-cart icons"></a>
+        <a href="#home" class="logo"><img src="images/logo.png" alt="site logo"></a>
+        
+        <form class="search-form">
+           <input type="search" name="" placeholder="search here..." id="search-box">
+           <label for="search-box" class="fas fa-search"></label>
+        </form>     
+     </header>
 
 
 
+
+
+     
+
+
+    <!-- link to Js file -->
     <script src="./js/script.js"></script>
 </body>
 </html>
