@@ -196,6 +196,41 @@ body {
   color: #aaa;
 }
 
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+.menu .box-container .box {
+  text-align: center;
+}
+.menu .box-container .box:hover img {
+  transform: translateY(1rem);
+}
+.menu .box-container img {
+  height: 25rem;
+}
+.menu .content {
+  padding: 1rem 0;
+}
+.menu .content h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.menu .content .price {
+  font-size: 2rem;
+  line-height: 2;
+  color: #aaa;
+}
+.menu .stars {
+  margin-bottom: 2rem;
+}
+.menu .stars i {
+  font-size: 1.7rem;
+  color: #eacf4f;
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 3rem;
@@ -212,7 +247,7 @@ body {
 
   .header {
     justify-content: flex-end;
-    gap: 2rem;
+    gap: 3rem;
   }
   .header .logo {
     transform: translateX(0);
