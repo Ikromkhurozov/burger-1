@@ -66,6 +66,16 @@ body{
     padding: 3rem 9%;
 }
 
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h3{
+        @include title-text(3rem);
+        margin-top: 1rem;
+    }
+}
+
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -224,6 +234,7 @@ body{
         @include grap-text(1.5rem)
     }
 }
+
 
 
 
