@@ -275,7 +275,53 @@ body{
     }
 }
 
+// About section styles
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
 
+    .image{
+        flex: 1 1 40rem;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .content{
+        flex: 1 1 40rem;
+        margin: 20px 30px;
+
+        .title{
+            @include title-text(2.5rem);
+        }
+
+        p{
+            @include grap-text(1.5rem);
+            padding: 2rem 0;
+        }
+
+        .icons{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+        }
+
+        h3{
+            flex: 1 1 16rem;
+            @include title-text(1.5rem);
+
+            i{
+                padding-right: .5rem;
+                color: $yellow;
+            }
+        }
+    }
+}
 
 
 
@@ -350,6 +396,11 @@ body{
 @media (max-width: 768px) {
     .home .content h3{
         font-size: 2.5rem;
+    }
+    .about{
+        .content{
+            text-align: center;
+        }
     }
 }
 
