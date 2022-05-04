@@ -125,8 +125,7 @@ body{
         font-size: 2.5rem;
         cursor: pointer;
         color:$white;
-        margin-right: 5px;
- 
+
         &:hover{
             color:$yellow;
         }
@@ -642,6 +641,11 @@ body{
 }
 
 @media (max-width: 650px) {
+    .header{
+        icons:not(:last-child){
+            margin-right: 7px;
+        }
+    }
     .reviews{
         .box-container{
             flex-direction: column-reverse;

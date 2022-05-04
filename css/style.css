@@ -93,7 +93,6 @@ body {
   font-size: 2.5rem;
   cursor: pointer;
   color: #fff;
-  margin-right: 5px;
 }
 .header .icons:hover {
   color: #eacf4f;
@@ -558,6 +557,10 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .header icons:not(:last-child) {
+    margin-right: 7px;
+  }
+
   .reviews .box-container {
     flex-direction: column-reverse;
   }
