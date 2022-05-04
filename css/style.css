@@ -144,6 +144,7 @@ body {
   background: url(../images/home-bg.png) no-repeat;
   background-size: cover;
   background-position: center;
+  margin-bottom: 100px;
 }
 .home .content {
   max-width: 70rem;
@@ -166,6 +167,7 @@ body {
 }
 
 .service {
+  margin-bottom: 100px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
   gap: 2rem;
@@ -197,9 +199,11 @@ body {
 }
 
 .menu .box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
-  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8rem;
 }
 .menu .box-container .box {
   text-align: center;
@@ -280,6 +284,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 80px;
 }
 .reviews .box-container .box {
   text-align: center;
@@ -308,6 +313,76 @@ body {
 .reviews .box-container .stars i {
   color: #eacf4f;
   font-size: 1.7rem;
+}
+
+.contact .heading {
+  margin-bottom: 70px;
+}
+.contact .row {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  gap: 30px;
+}
+.contact .row .map {
+  flex: 1 1 40rem;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+.contact .row h3 {
+  padding: 1rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.contact .row p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #aaa;
+}
+.contact .form {
+  flex: 1 1 40rem;
+}
+.contact .form .icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.contact .form .icons-container .icons {
+  flex: 1 1 17rem;
+  text-align: center;
+}
+.contact .form .icons-container .icons i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  border-radius: 50%;
+  background: #eacf4f;
+  color: #000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.contact .form form {
+  text-align: center;
+}
+.contact .form form .box {
+  padding: 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background: none;
+  border: 0.2rem solid rgba(255, 255, 255, 0.3);
+  text-transform: none;
+  width: 100%;
+  margin: 0.7rem 0;
+}
+.contact .form form .box:focus {
+  border-color: #eacf4f;
+}
+.contact .form form textarea {
+  height: 100%;
+  resize: none;
 }
 
 @media (max-width: 1200px) {
@@ -352,6 +427,10 @@ body {
   }
   .header .navbar .space {
     display: none;
+  }
+
+  .contact .row {
+    flex-direction: column;
   }
 }
 @media (max-width: 768px) {

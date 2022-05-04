@@ -189,6 +189,7 @@ body{
     background: url(../images/home-bg.png) no-repeat;
     background-size: cover;
     background-position: center;
+    margin-bottom: 100px;
 
     .content{
         max-width: 70rem;
@@ -212,6 +213,7 @@ body{
 
 // Service section styles
 .service{
+    margin-bottom: 100px;
     @include grid(31rem);
 
     .box{
@@ -243,8 +245,12 @@ body{
 // Menu section styles
 .menu{
     .box-container{
-        @include grid(31rem);
-
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8rem;
+        
         .box{
             text-align: center;
 
@@ -331,7 +337,8 @@ body{
 // Reviews section styles
 .reviews{
     .box-container{
-       @include flex(2rem);
+       @include flex(10px);
+        margin-bottom: 80px;
 
         .box{
             text-align: center;
@@ -363,6 +370,89 @@ body{
         }
     }
 }
+
+// Contact section styles
+.contact{
+    .heading{
+        margin-bottom: 70px;
+    }
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        gap: 30px;
+ 
+        .map{
+            flex:1 1 40rem;
+            width: auto;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h3{
+            padding:1rem 0;
+            @include title-text(2rem);
+         }
+
+         p{
+            @include grap-text(1.5rem);
+         }
+ 
+        
+    }
+    .form{
+        flex:1 1 40rem;
+
+        .icons-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap:2rem;
+            margin-bottom: 3rem;
+
+            .icons{
+                flex:1 1 17rem;
+                text-align: center;
+            
+                i{
+                    height: 6rem;
+                    width: 6rem;
+                    line-height: 6rem;
+                    border-radius: 50%;
+                    background: $yellow;
+                    color:$black;
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        form{
+            text-align: center;
+
+            .box{
+                padding:1.2rem 1.4rem;
+                font-size: 1.6rem;
+                color:$white;
+                background: none;
+                border:$border;
+                text-transform: none;
+                width: 100%;
+                margin:.7rem 0;
+
+                &:focus{
+                    border-color: $yellow;
+                }
+            }
+
+            textarea{
+                height: 100%;
+                resize: none;
+            }
+        }
+    }
+}
+ 
 
 
 
@@ -428,6 +518,12 @@ body{
             .space{
                 display: none;
             }
+        }
+    }
+
+    .contact{
+        .row{
+            flex-direction: column;
         }
     }
 }
