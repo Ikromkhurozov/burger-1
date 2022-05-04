@@ -34,6 +34,11 @@ $border: .2rem solid rgba(255, 255, 255, .3);
     grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
     gap: 2rem;
 }
+@mixin flex($flex){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 html{
     font-size: 62.5%;
@@ -323,7 +328,41 @@ body{
     }
 }
 
+// Reviews section styles
+.reviews{
+    .box-container{
+       @include flex(2rem);
 
+        .box{
+            text-align: center;
+            padding: 2rem;
+
+            img{
+                height: 10rem;
+                width: 10rem;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+            }
+
+            h3{
+                @include title-text(2rem);
+            }
+
+            p{
+                @include grap-text(1.5rem);
+                padding: 1rem 0;
+            }
+        }
+
+        .stars{
+            padding-top: 5px;
+            i{
+                color: $yellow;
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
 
 
 
@@ -400,6 +439,15 @@ body{
     .about{
         .content{
             text-align: center;
+        }
+    }
+}
+
+
+@media (max-width: 650px) {
+    .reviews{
+        .box-container{
+            flex-direction: column-reverse;
         }
     }
 }
