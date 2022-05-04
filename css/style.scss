@@ -73,7 +73,7 @@ body{
 
 .heading{
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 
     h3{
         @include title-text(3rem);
@@ -373,6 +373,7 @@ body{
 
 // Contact section styles
 .contact{
+    margin-bottom: 145px;
     .heading{
         margin-bottom: 70px;
     }
@@ -453,16 +454,78 @@ body{
     }
 }
  
-
-
-
-
-
-
-
-
-
-
+// Blog section styles
+.blogs{
+    .box-container{
+        @include grid(31rem);
+ 
+        .box{
+            position: relative;
+ 
+            &:hover .image{
+                img{
+                    transform: scale(1.1);
+                }
+                .icons{
+                    transform: translateY(0);
+                }
+            }
+ 
+            .image{
+                height: 25rem;
+                overflow:hidden;
+                position: relative;
+    
+                .icons{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding:2rem;
+                    background: $black;
+                    position: absolute;
+                    bottom:0; left:0; right:0;
+                    z-index: 10;
+                    transform: translateY(10rem);
+    
+                    a{
+                        font-size: 1.5rem;
+                        color:$white;
+    
+                        i{
+                            padding-right: .5rem;
+                            color:$yellow;
+                        }
+        
+                        &:hover{
+                            color:$yellow;
+                        }
+                    }
+                }
+ 
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+ 
+            .content{
+                text-align: center;
+                padding:2rem;
+    
+                h3{
+                    @include title-text(2rem);
+                }
+    
+                p{
+                    @include grap-text(1.5rem);
+                    padding:1.5rem 0;
+                }
+            }
+        }
+    }
+}
+ 
 
 
 
@@ -522,6 +585,7 @@ body{
     }
 
     .contact{
+        margin-bottom: 100px;
         .row{
             flex-direction: column;
         }
@@ -537,8 +601,12 @@ body{
             text-align: center;
         }
     }
+    .blogs{
+        .box-container{
+            grid-template-columns: 2fr;
+        }
+    }
 }
-
 
 @media (max-width: 650px) {
     .reviews{
