@@ -507,7 +507,7 @@ body {
 
   .header {
     justify-content: flex-end;
-    gap: 3rem;
+    gap: 6rem;
   }
   .header .logo {
     transform: translateX(0);
