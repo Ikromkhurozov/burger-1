@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600&display=swap");
+/* 1. Core styles */
+/* 2. Header section styles */
+/* 3. Home section styles */
+/* 4. Service section styles */
+/* 5. Menu section styles */
+/* 6. About section styles */
+/* 7. Reviews section styles */
+/* 8. Contact section styles */
+/* 9. Blog section styles */
+/* 10. Footer section styles */
+/* 11. Media queries */
 * {
   font-family: "Raleway", sans-serif;
   margin: 0;
@@ -388,6 +399,9 @@ body {
   resize: none;
 }
 
+.blogs {
+  margin-bottom: 30px;
+}
 .blogs .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
@@ -450,6 +464,31 @@ body {
   line-height: 2;
   color: #aaa;
   padding: 1.5rem 0;
+}
+
+.footer {
+  text-align: center;
+  background: linear-gradient(transparent, #690000);
+}
+.footer .navbar a {
+  color: #fff;
+  font-size: 3rem;
+  margin: 0 2rem;
+}
+.footer .navbar a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  color: #eacf4f;
+}
+.footer .credit {
+  font-size: 2rem;
+  line-height: 2;
+  color: #aaa;
+  padding-top: 2rem;
+  padding-bottom: 30px;
+}
+.footer .credit span {
+  color: #eacf4f;
 }
 
 @media (max-width: 1200px) {
