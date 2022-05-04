@@ -93,6 +93,7 @@ body {
   font-size: 2.5rem;
   cursor: pointer;
   color: #fff;
+  margin-right: 5px;
 }
 .header .icons:hover {
   color: #eacf4f;
@@ -343,6 +344,7 @@ body {
   width: auto;
   height: auto;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 .contact .row h3 {
   padding: 1rem 0;
@@ -507,7 +509,7 @@ body {
 
   .header {
     justify-content: flex-end;
-    gap: 6rem;
+    gap: 3rem;
   }
   .header .logo {
     transform: translateX(0);

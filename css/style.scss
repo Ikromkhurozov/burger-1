@@ -125,6 +125,7 @@ body{
         font-size: 2.5rem;
         cursor: pointer;
         color:$white;
+        margin-right: 5px;
  
         &:hover{
             color:$yellow;
@@ -399,6 +400,7 @@ body{
             width: auto;
             height: auto;
             border-radius: 10px;
+            margin-bottom: 10px;
         }
 
         h3{
@@ -585,7 +587,7 @@ body{
     
     .header{
         justify-content: flex-end;
-        gap: 6rem;
+        gap: 3rem;
 
         .logo{
             transform: translateX(0);
