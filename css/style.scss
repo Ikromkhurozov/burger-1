@@ -642,7 +642,7 @@ body{
 
 @media (max-width: 650px) {
     .header{
-        icons:not(:last-child){
+        .icons:not(:last-child){
             margin-right: 7px;
         }
     }
